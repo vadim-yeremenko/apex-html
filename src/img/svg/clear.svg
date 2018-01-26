@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>clear</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-2.1%" y="-2.8%" width="104.2%" height="106.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Tab-Background---Photo-Gallery" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-17.000000, -145.000000)">
+        <g fill="#3D687E" id="Tab-Background">
+            <g filter="url(#filter-1)">
+                <g id="Group-2" transform="translate(30.000000, 101.000000)">
+                    <g id="clear-filters" transform="translate(0.000000, 52.000000)">
+                        <polygon id="clear" points="10 3.53571429 5.53571429 8 10 12.4642857 9.46428571 13 5 8.53571429 0.535714286 13 0 12.4642857 4.46428571 8 0 3.53571429 0.535714286 3 5 7.46428571 9.46428571 3"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

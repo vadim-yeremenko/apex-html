@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-logout</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M166.25,13 L168.75,10.5 L159,10.5 L159,9.5 L168.75,9.5 L166.25,7 L167,6.25 L170.75,10 L167,13.75 L166.25,13 Z M164,17 L155,17 L155,3 L164,3 L164,8 L163,8 L163,4 L156,4 L156,16 L163,16 L163,12 L164,12 L164,17 Z" id="path-1"></path>
+        <filter x="-44.4%" y="-35.7%" width="188.9%" height="200.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Photo-Gallery---Dark---Hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-181.000000, -771.000000)">
+        <g id="Logout" transform="translate(30.000000, 770.000000)">
+            <g id="icon-logout">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

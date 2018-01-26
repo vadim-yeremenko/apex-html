@@ -1,0 +1,132 @@
+.sidebar{
+  min-width: 290px;
+  min-height: 100vh;
+  background: $darkBlue;
+  position: relative;
+  display: block;
+  &-footer{
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: $darkBlue;
+  }
+  &-logo{
+    background: $black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  &-nav{
+    padding: 40px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+.sidebar-nav-section{
+  h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgba(255,255,255,0.75);
+  }
+  ul{
+    li{
+      padding: 5px 0 5px;
+      display: block;
+      a{
+        color: $white;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 30px;
+        display: block;
+        transition: $transitionLink;
+        &:hover{
+          color: $green;
+        }
+      }
+      &.active{
+        a{
+          background: $green;
+          border-radius: 4px;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+.sidebar-footer-user{
+  display: flex;
+  color: $white;
+  justify-content: space-between;
+  width: 100%;
+  a{
+    color: $white;
+    text-decoration: none;
+    transition: $transitionLink;
+    &:hover{
+      color: $green;
+    }
+  }
+  .user-avatar{
+    border-radius: 100%;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  .user-name{
+    line-height: 20px;
+    flex-grow: 2;
+    margin-left: 20px;
+    margin-right: 10px;
+    a{
+      display: block;
+      font-size: 15px;
+    }
+  }
+  .user-exit{
+    line-height: 20px;
+  }
+}
+
+.switcher{
+  width: 40px;
+  height: 15px;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  background: $red;
+  transition: $transitionLink;
+  .switcher_toggle{
+    left: 27px;
+  }
+  &.active{
+    background: $green;
+    .switcher_toggle{
+      left: 2px;
+    }
+  }
+  &_toggle{
+    width: 11px;
+    height: 11px;
+    background: $white;
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    transition: $transitionLink;
+  }
+}

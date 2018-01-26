@@ -1,0 +1,54 @@
+.stores-table{
+  width: 100%;
+  margin-top: 50px;
+  a{
+    color: $primarilyFontColor;
+    text-decoration: none;
+  }
+  tr{
+    border-bottom: 1px solid #EDEFF0;
+    td{
+      padding: 15px 10px;
+      vertical-align: middle;
+    }
+    td:nth-child(1){
+      width: 20px;
+      padding-right: 10px;
+    }
+
+    td:nth-child(3){
+      width: 200px;
+      padding-right: 10px;
+    }
+    td:last-child{
+      width: 50px;
+      a{
+        padding: 5px;
+      }
+    }
+  }
+  tr.stores-table-item{
+    td:nth-child(2){
+      a{
+        font-weight: bold;
+      }
+    }
+    &.selected{
+      border: 1px solid $red !important;
+      box-shadow: 0 0 5px lighten($red, 30%);
+      td{
+        border-top: 1px solid $red !important;
+      }
+      .btn-del{
+        i{
+          color: $red;
+        }
+      }
+    }
+  }
+  .styled-select{
+    .jq-selectbox__trigger-arrow{
+      border-top-color: $red !important;
+    }
+  }
+}

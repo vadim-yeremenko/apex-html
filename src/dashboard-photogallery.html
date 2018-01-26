@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apex</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Include Styles-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <a href="#">
+                    <img src="img/svg/ApexLogo_Black_SpotGreen.svg" alt="">
+                </a>
+            </div>
+            <div class="sidebar-nav">
+                <div class="sidebar-nav-section">
+                    <h3 class="tt-uppercase clr-green">Dashboard</h3>
+                    <ul>
+                        <li class="active"><a href="#">Manage users</a></li>
+                        <li><a href="#">Manage stores</a></li>
+                        <li><a href="#">Approve submissions</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-nav-section">
+                    <h3 class="tt-uppercase">Sales Tool Admin</h3>
+                    <ul>
+                        <li><a href="#">Photo gallery</a></li>
+                        <li><a href="#">Cost Vs. Value</a></li>
+                        <li><a href="#">Side by Side</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <div class="sidebar-footer-user">
+                    <div class="user-avatar">
+                        <img src="img/user-avatar.jpg" alt="">
+                    </div>
+                    <div class="user-name">
+                        <a href="#">John Smith</a>
+                    </div>
+                    <div class="user-exit">
+                        <a href="#">
+                            <i class="exit-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.sidebar-->
+        <div class="main">
+            <div class="main-wrap">
+                <div class="main-tabs">
+                    <div class="tabs-links">
+                        <div class="tabs-links-item current">
+                            <a href="" class="title">Manage</a>
+                            <div class="tabs-sublinks">
+                                <a href="#" class="sublink active">
+                                    <span class="title">Users</span>
+                                    <span class="count">27,234</span>
+                                </a>
+                                <a href="#" class="sublink">
+                                    <span class="title">Stores</span>
+                                    <span class="count">27,234</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tabs-links-item">
+                            <a href="" class="title">Approve</a>
+                            <a href="#" class="sublink">
+                                <span class="title">Submissions</span>
+                                <span class="count">17</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tabs-content-wrap">
+                            <div class="manage-users">
+                                <div class="manage-users-sidebar">
+                                    <div class="search-box">
+                                        <form action="#">
+                                            <h3>Search</h3>
+                                            <div class="search-inp">
+                                                <input type="text" name="search" id="search">
+                                                <button class="btn-search"><i class="fa fa-search"></i></button>
+                                            </div>
+                                            <a href="#" class="clear-filters"><i class="clear-icon"></i>Clear filters</a>
+                                        </form>
+                                    </div>
+                                    <div class="filter-select">
+                                        <h3>By category</h3>
+                                        <select name="category-filter" id="category-filter" class="styled-select">
+                                            <option value="">All</option>
+                                            <option value="Category 1">Category 1</option>
+                                            <option value="Category 2">Category 2</option>
+                                            <option value="Category 3">Category 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-checkbox">
+                                        <h3>Store</h3>
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="chk-1" class="styled-chk">
+                                            <label for="chk-1">Atlanta, GA</label>
+                                        </div>
+                                        <div class="checkbox-group">
+                                            <input type="checkbox" id="chk-2" class="styled-chk">
+                                            <label for="chk-2">Boise, ID</label>
+                                        </div>
+                                    </div>
+                                </div> <!--/.manage-sidebar-->
+                                <div class="manage-users-list">
+                                    <div class="manage-users-list-head flexbox flex-between">
+                                        <div class="users-count">281,234 photos</div>
+                                        <a href="#" class="btn btn-delete">
+                                            <span class="btn_icon"><i class="fa fa-plus"></i></span>
+                                            <span class="btn_title">Add new</span>
+                                        </a>
+                                    </div>
+                                    <div class="photogallery-list">
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="photo-item">
+                                            <img src="img/photogallery-placeholder.png" alt="">
+                                            <div class="photo-item-controlls">
+                                                <a href="#">
+                                                    <i class="fa fa-pencil"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-object-ungroup"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-arrows"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div><!--/.manage-users-list-->
+                            </div>
+                        </div>
+                    </div><!--/.tabs-content-->
+                </div><!--/.main-tabs-->
+            </div><!--/.main-wrap-->
+        </div><!--/.main-->
+    </div>
+    <!-- Include JavaScript-->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
